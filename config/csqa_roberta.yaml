@@ -1,0 +1,40 @@
+# Dataset
+train_jsonl: ./data/csqa/train_rand_split.jsonl
+dev_jsonl: ./data/csqa/dev_rand_split.jsonl
+test_jsonl: ./data/csqa/test_rand_split_no_answers.jsonl
+num_choice: 5
+inhouse: true
+
+train_adj_pk: ./data/csqa/hybrid/train_cpt_pairs_1hop_hybrid.jsonl.pk
+train_gen_pt: ./data/csqa/hybrid/relgen/train_cpt_pairs_1hop_hybrid.jsonl.pt
+dev_adj_pk: ./data/csqa/hybrid/dev_cpt_pairs_1hop_hybrid.jsonl.pk
+dev_gen_pt: ./data/csqa/hybrid/relgen/dev_cpt_pairs_1hop_hybrid.jsonl.pt
+test_adj_pk: ./data/csqa/hybrid/test_cpt_pairs_1hop_hybrid.jsonl.pk
+test_gen_pt: ./data/csqa/hybrid/relgen/test_cpt_pairs_1hop_hybrid.jsonl.pt
+
+# HGN specific
+alpha: 1e-3  # coefficient for the sparsity term in the loss
+edge_weight_dropout: 0.1
+eval_interval: 0  # that means eval after each epoch
+patience: 4  # early-stop if no improvement on dev set for K consecutive evaluation
+
+# Refer to https://github.com/INK-USC/MHGRN/blob/master/scripts/run_grn_csqa.sh
+unfreeze_epoch: 3 # should be 3
+format: fairseq
+encoder: roberta-large
+encoder_lr: 1e-5  # fixed
+decoder_lr: 1e-3  # {1e-4, 1e-3}
+batch_size: 64  # fixed
+max_seq_len: 80  # fixed
+
+# Machine specific
+mini_batch_size: 1 # 1 for GTX 1080 Ti (11GB)
+
+# Misc
+seed: 0
+save_dir: ./saved_models/csqa/HGN/
+save_model: true
+
+# Test
+test_model_path: <PATH_TO_CHECKPOINT_PT>
+output_pred_path: <PATH_TO_PREDICTION>

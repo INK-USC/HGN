@@ -1,0 +1,17 @@
+ckpt_dir: saved_edge_generator
+model_type: gpt2
+model_name: gpt2
+do_train: true
+max_seq_len: 32
+train_data_file: ./data/cpnet/head_tail_sent_train.csv
+eval_data_file: ./data/cpnet/head_tail_sent_dev.csv
+train_batch_size: 100
+eval_batch_size: 100
+learning_rate: 5e-5
+warmup_steps: 1000
+num_train_epochs: 10
+logging_steps: 4000
+overwrite_ckpt_dir: true
+fp16: false
+patience: 4
+train_with_eval_mask: true
