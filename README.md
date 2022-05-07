@@ -1,13 +1,18 @@
 # Learning Contextualized Knowledge Structures for Commonsense Reasoning
 
-Code for ArXiv paper:
+Code for paper "Learning Contextualized Knowledge Structures for Commonsense Reasoning" (Findings of ACL'21):
 
 ```bibtex
-@article{yan2020learning,
-  title={Learning Contextualized Knowledge Structures for Commonsense Reasoning},
-  author={Yan, Jun and Raman, Mrigank and Zhang, Tianyu and Rossi, Ryan and Zhao, Handong and Kim, Sungchul and Lipka, Nedim and Ren, Xiang},
-  journal={arXiv preprint arXiv:2010.12873},
-  year={2020}
+@inproceedings{yan2021learning,
+ address = {Online},
+ author = {Yan, Jun and Raman, Mrigank and Chan, Aaron and Zhang, Tianyu and Rossi, Ryan  and Zhao, Handong and Kim, Sungchul and Lipka, Nedim and Ren, Xiang},
+ booktitle = {Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021},
+ doi = {10.18653/v1/2021.findings-acl.354},
+ pages = {4038--4051},
+ publisher = {Association for Computational Linguistics},
+ title = {Learning Contextualized Knowledge Structures for Commonsense Reasoning},
+ url = {https://aclanthology.org/2021.findings-acl.354},
+ year = {2021}
 }
 ```
 
