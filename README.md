@@ -1,20 +1,6 @@
 # Learning Contextualized Knowledge Structures for Commonsense Reasoning
 
-Code for paper "Learning Contextualized Knowledge Structures for Commonsense Reasoning" (Findings of ACL'21):
-
-```bibtex
-@inproceedings{yan2021learning,
- address = {Online},
- author = {Yan, Jun and Raman, Mrigank and Chan, Aaron and Zhang, Tianyu and Rossi, Ryan  and Zhao, Handong and Kim, Sungchul and Lipka, Nedim and Ren, Xiang},
- booktitle = {Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021},
- doi = {10.18653/v1/2021.findings-acl.354},
- pages = {4038--4051},
- publisher = {Association for Computational Linguistics},
- title = {Learning Contextualized Knowledge Structures for Commonsense Reasoning},
- url = {https://aclanthology.org/2021.findings-acl.354},
- year = {2021}
-}
-```
+This repo contains the code for paper [*Learning Contextualized Knowledge Structures for Commonsense Reasoning*](https://arxiv.org/abs/2010.12873), accepted to *Findings of ACL-IJCNLP 2021*.
 
 The code is based on [MHGRN](https://github.com/INK-USC/MHGRN/). We thank the authors for open-sourcing their code.
 
@@ -124,3 +110,19 @@ The script will:
         --test_model_path <PATH_TO_CHECKPOINT_PT> \
         --output_pred_path <PATH_TO_PREDICTION>
     ```
+
+## Citation
+
+```bibtex
+@inproceedings{yan2021learning,
+ address = {Online},
+ author = {Yan, Jun and Raman, Mrigank and Chan, Aaron and Zhang, Tianyu and Rossi, Ryan  and Zhao, Handong and Kim, Sungchul and Lipka, Nedim and Ren, Xiang},
+ booktitle = {Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021},
+ doi = {10.18653/v1/2021.findings-acl.354},
+ pages = {4038--4051},
+ publisher = {Association for Computational Linguistics},
+ title = {Learning Contextualized Knowledge Structures for Commonsense Reasoning},
+ url = {https://aclanthology.org/2021.findings-acl.354},
+ year = {2021}
+}
+```
